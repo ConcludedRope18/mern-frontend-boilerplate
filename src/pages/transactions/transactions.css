@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    background-color: aliceblue;
+    width: 20%;
+    float: left;
+}
+.content {
+    float: right;
+    width: 80%;
+    background-color:deepskyblue;
+}
