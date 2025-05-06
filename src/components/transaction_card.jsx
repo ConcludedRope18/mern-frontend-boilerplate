@@ -1,10 +1,12 @@
 import React from 'react'
 import "./transaction_card.css"
 
-const Card = () => {
+const Card = ({name, amount, imageUrl}) => {
     return (
       <div className="card">
-        <img className="pfp" src="src/assets/placeholder_pfp.png"></img>
+        <img className="pfp" src={imageUrl}></img>
+        <div className="name">{name}</div>
+        <div className="message">{amount}</div>
       </div>
     );
   };

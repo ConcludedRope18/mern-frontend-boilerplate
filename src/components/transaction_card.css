@@ -1,12 +1,28 @@
-.card {
-    width:100%;
-    height:60px;
-    border-radius:20px;
-    background-color:red;
+:root {
+    --card_height: 80px;
 }
-.pfp{
- width:60px;
- height:60px;
- float:left;
- border-radius:50%;
+.card {
+    width:98%;
+    height:var(--card_height);
+    border-radius:50px;
+    background-color:#DFF2FF;
+    color:#000000;
+    margin: 3px;
+    align-self:center
+}
+.pfp {
+    scale:95%;
+    width:var(--card_height);
+    height:var(--card_height)t;
+    float:left;
+    border-radius:100%;
+    padding-right:5px;
+}
+
+.name {
+    margin-top: 4px;
+    font-weight:bold;
+}
+.message {
+    margin:0px;
 }
