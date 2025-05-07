@@ -9,14 +9,28 @@
     ],
     "transactions": [
         {
-            "id": "0001",
-            "uid": "0001",
-            "name": "Bananierul",
-            "description": null,
-            "amount": -250,
-            "category_id": null,
-            "date": null,
-            "recurring": false
+            "name": "Juice man",
+            "amount": -250
+        },
+        {
+            "name": null,
+            "amount": 31
+        },
+        {
+            "name": null,
+            "amount": 12
+        },
+        {
+            "name": "Box Supplier",
+            "amount": -240
+        },
+        {
+            "name": null,
+            "amount": 42
+        },
+        {
+            "name": "Juice man",
+            "amount": -250
         },
         {
             "name": null,

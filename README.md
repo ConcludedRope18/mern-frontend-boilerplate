@@ -24,3 +24,15 @@ npm run dev
 ```
 
 Open http://localhost:5173/ to see the result
+
+# To-Do List
+### To-Do
+- [ ] Budgets
+- [ ] Receive financial recommendations
+- [ ] Savings Tracker
+- [ ] Bank Account Integration (optional)
+### In Progress
+- [ ] Recurring Expense Tracker
+- [ ] Visual Analytics
+### Dome
+- [X] Income and Expense Record
