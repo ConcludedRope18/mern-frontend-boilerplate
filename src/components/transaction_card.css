@@ -1,28 +1,42 @@
-:root {
-    --card_height: 80px;
-}
+
 .card {
-    width:98%;
-    height:var(--card_height);
-    border-radius:50px;
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.5rem;
+
+    padding: 0.5rem;
+    
+    overflow: hidden;
+
+    border-radius: 50px;
     background-color:#DFF2FF;
     color:#000000;
-    margin: 3px;
-    align-self:center
 }
+
 .pfp {
-    scale:95%;
-    width:var(--card_height);
-    height:var(--card_height)t;
-    float:left;
-    border-radius:100%;
-    padding-right:5px;
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    border-radius:50%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
 }
 
 .name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 4px;
     font-weight:bold;
 }
-.message {
-    margin:0px;
+
+.date {
+    font-weight: 400;
+    color: #aaa;
+    margin-right: 1ch;
 }

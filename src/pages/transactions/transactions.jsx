@@ -5,6 +5,7 @@ import Card from "../../components/transaction_card.jsx";
 
 import TransactionData from "../../../public/backend placeholder/database.json"
 
+{/* <script src="transactions.js"/> */}
 
 const Transactions = () => {
     // console.log("TransactionData: ", TransactionData);
@@ -20,6 +21,7 @@ const Transactions = () => {
                     <Card
                     key={index}
                     {...transaction}
+                    onclick="collapseEnlarge()"
                     />
                 )}
             </div>

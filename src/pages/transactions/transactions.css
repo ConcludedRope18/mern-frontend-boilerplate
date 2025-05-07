@@ -3,14 +3,18 @@
     height: 100vh;
 }
 .sidebar {
-    background-color: aliceblue;
-    width: 30%;
-    float: left;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    gap: 0.75rem;
+    overflow: auto;
+
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    background-color: aliceblue;
 }
 .content {
-    float: right;
-    width: 80%;
+    flex: 1;
+    padding: 1rem;
     background-color:deepskyblue;
 }
