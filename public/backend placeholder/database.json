@@ -1,0 +1,24 @@
+{
+    "transactions": [
+        {
+            "name": "Bananierul",
+            "amount": -250
+        },
+        {
+            "name": null,
+            "amount": 31
+        },
+        {
+            "name": null,
+            "amount": 12
+        },
+        {
+            "name": "Box Supplier",
+            "amount": -240
+        },
+        {
+            "name": null,
+            "amount": 42
+        }
+    ]
+}
