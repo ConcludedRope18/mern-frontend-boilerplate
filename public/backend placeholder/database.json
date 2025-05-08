@@ -10,43 +10,30 @@
     "transactions": [
         {
             "name": "Juice man",
-            "amount": -250
+            "amount": -250,
+            "date": "6.05.2025",
+            "message": "Payment for all that juice"
         },
         {
             "name": null,
-            "amount": 31
+            "amount": 31,
+            "date": "4.05.2025"
         },
         {
             "name": null,
-            "amount": 12
+            "amount": 12,
+            "date": "4.05.2025"
         },
         {
             "name": "Box Supplier",
-            "amount": -240
+            "amount": -240,
+            "date": "29.04.2025",
+            "message": "Your boxes are so good"
         },
         {
             "name": null,
-            "amount": 42
-        },
-        {
-            "name": "Juice man",
-            "amount": -250
-        },
-        {
-            "name": null,
-            "amount": 31
-        },
-        {
-            "name": null,
-            "amount": 12
-        },
-        {
-            "name": "Box Supplier",
-            "amount": -240
-        },
-        {
-            "name": null,
-            "amount": 42
+            "amount": 42,
+            "date": "40.04.2025"
         }
     ]
 }

@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/home/home";
-import Transactions from "./pages/transactions/transactions"
+import Financial from "./pages/financial/financial"
 
 const router = createBrowserRouter([
   {
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     element: <div>About Frontend</div>,
   },
   {
-    path:"transactions",
-    element: <Transactions />,
+    path:"financial",
+    element: <Financial />,
   },
   {
     path: "settings",

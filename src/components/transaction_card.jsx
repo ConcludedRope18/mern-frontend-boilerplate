@@ -1,7 +1,7 @@
 import React from 'react'
 import "./transaction_card.css"
 
-const Card = ({name, amount, imageUrl}) => {
+const Card = ({name, amount, imageUrl, date, message}) => {
   const transactionType = amount >= 0 ? "Received" : "Sent";
   amount = Math.abs(amount)
     return (
@@ -11,11 +11,11 @@ const Card = ({name, amount, imageUrl}) => {
         <div className="card-content">
           <div className="name">
             {name ?? "Client"}
-            <div className="date">35.89.2312</div>
+            <div className="date">{date}</div>
           </div>
           <div className="sum">{transactionType} ron {amount}</div>
           <div className="message">
-            Lorem, ipsum dolor sit amet consectetur 
+            {message}
           </div>
         </div>
       </div>

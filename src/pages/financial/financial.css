@@ -12,8 +12,9 @@
     width: 20rem;
     padding: 0.5rem 1rem;
     background-color: aliceblue;
+    scrollbar-width: none;
 }
-.content {
+.financialDashboard {
     flex: 1;
     padding: 1rem;
     background-color:deepskyblue;
