@@ -31,8 +31,10 @@ Open http://localhost:5173/ to see the result
 - [ ] Receive financial recommendations
 - [ ] Savings Tracker
 - [ ] Bank Account Integration (optional)
+- [ ] Integrate Database
+    - [X] Integrate Faux-Database for the time being
 ### In Progress
 - [ ] Recurring Expense Tracker
 - [ ] Visual Analytics
-### Dome
+### Done ✓
 - [X] Income and Expense Record
