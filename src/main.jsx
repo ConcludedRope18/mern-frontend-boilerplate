@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/home/home";
 import Financial from "./pages/financial/financial"
+import Login from "./pages/login/login";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "settings",
     element: <div>Settings Page</div>,
+  },
+  {
+    path: "login",
+    element: <Login />
   }
 ]);
 

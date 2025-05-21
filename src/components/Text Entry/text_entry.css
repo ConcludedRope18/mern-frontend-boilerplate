@@ -1,0 +1,20 @@
+.text_entry{
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.5rem;
+
+    padding: 0.5rem;
+    
+    overflow: hidden;
+
+    border-radius: 50px;
+    background-color:#DFF2FF;
+    color:#000000;
+    flex-direction:column;
+    align-items: center;
+}
+.text_entry_input{
+    background-color:aliceblue;
+    width: 80%;
+    color:black;
+}

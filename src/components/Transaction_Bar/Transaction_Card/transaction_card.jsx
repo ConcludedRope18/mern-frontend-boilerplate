@@ -7,7 +7,6 @@ const Card = ({name, amount, imageUrl, date, message}) => {
     return (
       <div className="card">
         <img className="pfp" src={imageUrl}></img>
-
         <div className="card-content">
           <div className="name">
             {name ?? "Client"}

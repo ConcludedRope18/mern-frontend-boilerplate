@@ -8,6 +8,7 @@ const Home = () => {
       <h1>Proiecte Colective 2024</h1>
       <Link to="/about">Frontend</Link>
       <Link to="/financial">Financial</Link>
+      <Link to="/login">Login</Link>
     </div>
   );
 };
