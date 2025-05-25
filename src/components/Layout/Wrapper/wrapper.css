@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 60px; 
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    background-color: var(--secondary-bg, #f0f0f0);
+    padding: 1rem;
+    gap: 1rem;
+}

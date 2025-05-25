@@ -1,0 +1,30 @@
+.top_bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%;
+    font-size: 1rem;
+    background-color: aliceblue;
+    padding: 10px 0; 
+    z-index: 1000
+}
+
+.top_bar a {
+    text-decoration: none;
+    color: black; 
+    padding: 10px 0; 
+    flex: 1; 
+    text-align: center;
+    border: 1px solid teal; 
+    border-radius: 5px; 
+    background-color: white; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin: 0 5px; 
+}
+
+.top_bar a:hover {
+    background-color: black; 
+    color: white; 
+}

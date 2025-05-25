@@ -1,0 +1,16 @@
+.transaction-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  
+  .transaction-bar-container::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,7 +1,14 @@
-.login_background {
+.login-page {
     display: flex;
-    width:100vw;
-    height:100vh;
-    background-color:aliceblue;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-bg);
     align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 30rem;
+    padding: 2rem;
 }

@@ -1,23 +1,41 @@
 import React from "react";
+import { fetchBudgets, fetchCategories, fetchTransactions } from '../../database_functions';
+import Wrapper from "../../components/Layout/Wrapper/wrapper";
+import TransactionBar from "../../components/Transactions/Bar/transaction_bar";
+import TransactionGraph from "../../components/Transactions/Graph/transaction_graph";
+import BudgetsPanel from '../../components/Budgets_Panel/budgets_panel';
+import CategoriesPanel from '../../components/Categories_Panel/categories_panel';
 import "./financial.css";
-import { Link } from "react-router-dom";
-
-import TransactionGraph from "../../components/Transaction_Graph/transaction_graph.jsx"
-import TransactionBar from "../../components/Transaction_Bar/transaction_bar.jsx";
-
+import AddButton from "../../components/Add_Button/add_button";
 
 const Financial = () => {
+  const transactions = fetchTransactions();
+  const budgets = fetchBudgets();
+  const categories = fetchCategories();
 
-    return( 
-        <div className="container">
-            <TransactionBar></TransactionBar>
-            <div className="financialDashboard">
-                <h1>test two</h1>
-                <TransactionGraph/>
-            </div>
+  return (
+    <Wrapper>
+      <div className="financial-dashboard">
+        {/* Left - Graph */}
+        <div className="graph-column">
+          <TransactionGraph />
+          <p className="graph-description">
+            This graph shows your recent daily balances and transaction trends.
+          </p>
         </div>
-    )
-}
 
+          <div className="transactions-column">
+            <TransactionBar transactions={transactions} />
+          </div>
+          <div className="budgets-container">
+            <BudgetsPanel budgets={budgets} />
+          </div>
+          <div className="categories-container">
+            <CategoriesPanel categories={categories} />
+          </div>
+      </div>
+    </Wrapper>
+  );
+};
 
 export default Financial;

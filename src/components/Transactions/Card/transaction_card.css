@@ -3,21 +3,11 @@
     display: flex;
     flex-shrink: 0;
     gap: 0.5rem;
-
     padding: 0.5rem;
-    
     overflow: hidden;
-
     border-radius: 50px;
     background-color:#DFF2FF;
     color:#000000;
-}
-
-.pfp {
-    width: 5rem;
-    height: 5rem;
-    flex-shrink: 0;
-    border-radius:50%;
 }
 
 .card-content {

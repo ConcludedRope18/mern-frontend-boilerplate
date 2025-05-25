@@ -1,0 +1,36 @@
+.account-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem); /* adjusts for navbar if needed */
+  padding: 2rem;
+}
+
+.account-card {
+  background-color: var(--card-bg, #DFF2FF);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.account-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.account-id {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.account-balance {
+  font-size: 1.25rem;
+  color: teal;
+  margin: 0.5rem 0 1rem 0;
+}

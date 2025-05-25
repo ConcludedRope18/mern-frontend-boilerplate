@@ -1,0 +1,11 @@
+:root {
+    --primary-bg: #DFF2FF;
+    --secondary-bg: #f0f0f0;
+    --card-bg: #DFF2FF;
+    --text-dark: #000000;
+    --text-light: #aaa;
+    --accent-teal: teal;
+    --topbar-height: 60px;
+    --primary-accent: #4FD1C5; 
+    --primary-accent-dark: #38B2AC; 
+  }

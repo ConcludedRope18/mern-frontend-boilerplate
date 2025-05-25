@@ -1,16 +1,18 @@
 import React from "react";
 import "./home.css";
-import { Link } from "react-router-dom";
+import Wrapper from "../../components/Layout/Wrapper/wrapper";
 
 const Home = () => {
-  return (
-    <div className="home">
-      <h1>Proiecte Colective 2024</h1>
-      <Link to="/about">Frontend</Link>
-      <Link to="/financial">Financial</Link>
-      <Link to="/login">Login</Link>
-    </div>
-  );
+    return (
+        <Wrapper>
+            <div className="home-content">
+                <h1>Business Management Dashboard</h1>
+                <div className="welcome-message">
+                    Welcome to your financial control center
+                </div>
+            </div>
+        </Wrapper>
+    );
 };
 
 export default Home;
