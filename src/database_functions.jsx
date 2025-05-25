@@ -64,59 +64,34 @@ export const fetchCategories = () => {
     {
       id: "food",
       name: "Food & Dining",
-      monthlyBudget: 1500,
-      monthlySpent: 875,
-      monthlyRemaining: 625,
-      percentageUsed: 58,
-      transactionCount: 24
+      monthlySpent: 500,
+      percentageUsed: 25,
+      transactionCount: 12
     },
     {
       id: "transport",
       name: "Transportation",
-      monthlyBudget: 800,
-      monthlySpent: 420,
-      monthlyRemaining: 380,
-      percentageUsed: 53,
-      transactionCount: 12
+      monthlySpent: 300,
+      percentageUsed: 15,
+      transactionCount: 8
     },
     {
       id: "entertainment",
       name: "Entertainment",
-      monthlyBudget: 500,
-      monthlySpent: 320,
-      monthlyRemaining: 180,
-      percentageUsed: 64,
-      transactionCount: 18
-    },
-    {
-      id: "utilities",
-      name: "Utilities",
-      monthlyBudget: 1200,
-      monthlySpent: 1150,
-      monthlyRemaining: 50,
-      percentageUsed: 96,
-      transactionCount: 8
+      monthlySpent: 700,
+      percentageUsed: 35,
+      transactionCount: 10
     },
     {
       id: "shopping",
       name: "Shopping",
-      monthlyBudget: 600,
-      monthlySpent: 450,
-      monthlyRemaining: 150,
-      percentageUsed: 75,
-      transactionCount: 15
-    },
-    {
-      id: "health",
-      name: "Health & Wellness",
-      monthlyBudget: 400,
-      monthlySpent: 210,
-      monthlyRemaining: 190,
-      percentageUsed: 53,
-      transactionCount: 7
+      monthlySpent: 500,
+      percentageUsed: 25,
+      transactionCount: 14
     }
   ];
 };
+
 export const addTransaction = (transaction) => {
   pass
 };
