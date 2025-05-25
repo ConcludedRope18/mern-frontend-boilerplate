@@ -17,7 +17,7 @@ const CategoriesPanel = ({ categories }) => {
           <div key={category.id} className="category-item">
             <div className="category-header">
               <span className="category-name">{category.name}</span>
-              <span className="category-percentage">{category.percentageUsed}% of total</span>
+              <span className="category-percentage">{category.percentageUsed}%</span>
             </div>
             <div className="category-progress">
               <div 
@@ -26,7 +26,7 @@ const CategoriesPanel = ({ categories }) => {
               />
             </div>
             <div className="category-footer">
-              <span className="category-spent">{category.monthlySpent.toFixed(2)} RON spent</span>
+              <span className="category-spent">{category.monthlySpent.toFixed(2)} RON</span>
               <span className="transaction-count">{category.transactionCount} transactions</span>
             </div>
           </div>
