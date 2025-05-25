@@ -20,9 +20,15 @@ const AddTransactionForm = ({ onSubmit }) => {
   return (
     <div className="form-container">
       <h3>Add Transaction</h3>
-      <TextEntry placeholder="Description" value={description} onChange={e => setDescription(e.target.value)} />
-      <TextEntry placeholder="Amount" value={amount} onChange={e => setAmount(e.target.value)} type="number" />
-      <TextEntry placeholder="Category" value={category} onChange={e => setCategory(e.target.value)} />
+      <label>Description</label>
+      <TextEntry placeholder="e.g. Grocery shopping" value={description} onChange={e => setDescription(e.target.value)} />
+
+      <label>Amount</label>
+      <TextEntry placeholder="e.g. 75.50" type="number" value={amount} onChange={e => setAmount(e.target.value)} />
+
+      <label>Category</label>
+      <TextEntry placeholder="e.g. Food & Dining" value={category} onChange={e => setCategory(e.target.value)} />
+
       <Button label="Add Transaction" onClick={handleSubmit} />
     </div>
   );

@@ -18,8 +18,12 @@ const AddCategoryForm = ({ onSubmit }) => {
   return (
     <div className="form-container">
       <h3>Add Category</h3>
-      <TextEntry placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-      <TextEntry placeholder="Monthly Budget" value={monthlyBudget} onChange={e => setMonthlyBudget(e.target.value)} type="number" />
+      <label>Category Name</label>
+      <TextEntry placeholder="e.g. Health & Wellness" value={name} onChange={e => setName(e.target.value)} />
+
+      <label>Monthly Budget</label>
+      <TextEntry placeholder="e.g. 300" type="number" value={monthlyBudget} onChange={e => setMonthlyBudget(e.target.value)} />
+
       <Button label="Add Category" onClick={handleSubmit} />
     </div>
   );

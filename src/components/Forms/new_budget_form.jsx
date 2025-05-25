@@ -18,8 +18,12 @@ const AddBudgetForm = ({ onSubmit }) => {
   return (
     <div className="form-container">
       <h3>Add Budget</h3>
-      <TextEntry placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-      <TextEntry placeholder="Allocated" value={allocated} onChange={e => setAllocated(e.target.value)} type="number" />
+      <label>Budget Name</label>
+      <TextEntry placeholder="e.g. Utilities" value={name} onChange={e => setName(e.target.value)} />
+
+      <label>Allocated Amount</label>
+      <TextEntry placeholder="e.g. 1000" type="number" value={allocated} onChange={e => setAllocated(e.target.value)} />
+
       <Button label="Add Budget" onClick={handleSubmit} />
     </div>
   );
