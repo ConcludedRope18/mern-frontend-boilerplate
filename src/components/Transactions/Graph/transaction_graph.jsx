@@ -9,7 +9,7 @@ const TransactionGraph = ({ balances = [50, 42, 31, 12, -240, -250, 12, 31, 42, 
 
   return (
     <div className="transaction-graph">
-      <h3 className="graph-title">Daily Balances</h3>
+      <h3 className="graph-title">Balance History</h3>
       <div className="graph-square">
         {isNegative && <div className="zero-line" />}
         
