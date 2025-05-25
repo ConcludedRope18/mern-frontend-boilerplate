@@ -1,28 +1,15 @@
 .categories-panel {
-  background-color: var(--card-bg);
+  background-color: var(--card-bg, #DFF2FF);
+  padding: 1rem;
   border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  scrollbar-width: none;
-  gap: 1.5rem;
-}
-
-.categories-panel::-webkit-scrollbar {
-  display: none;
+  gap: 1rem;
 }
 
 .panel-title {
-  margin: 0;
   font-size: 1.25rem;
-  color: var(--text-dark);
-  position: sticky;
-  top: 0;
-  background: var(--card-bg);
-  padding-bottom: 1rem;
-  z-index: 1;
+  font-weight: bold;
 }
 
 .categories-list {
@@ -32,47 +19,39 @@
 }
 
 .category-item {
-  padding: 1rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  color: #000; /* 👈 Force black text */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.category-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  font-weight: bold;
 }
 
-.category-info {
+.category-progress {
+  background-color: #eee;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: teal;
+  border-radius: 0.5rem;
+  transition: width 0.3s ease-in-out;
+}
+
+.category-footer {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.category-name {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--text-dark);
-}
-
-.category-count {
-  font-size: 0.85rem;
-  color: var(--text-light);
-}
-
-.category-stats {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.25rem;
-}
-
-.category-percentage {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text-dark);
-}
-
-.category-remaining {
-  font-size: 0.85rem;
-  color: var(--text-light);
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
 }
