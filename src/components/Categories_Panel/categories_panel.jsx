@@ -4,11 +4,12 @@ import AddButton from '../Add_Button/add_button';
 import { useNavigate } from "react-router-dom";
 
 const CategoriesPanel = ({ categories }) => {
+  const navigate = useNavigate();
   return (
     <div className="categories-panel">
       <h3 className="panel-title">Categories</h3>
       <AddButton 
-        onClick={() => console.log('Add new category')} 
+        onClick={() => navigate('/add-category')} 
         label="New Category"
       />
       <div className="categories-list">
