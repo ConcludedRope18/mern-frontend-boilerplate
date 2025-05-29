@@ -19,9 +19,7 @@ const Financial = () => {
         {/* Left - Graph */}
         <div className="graph-column">
           <TransactionGraph />
-          <p className="graph-description">
-            This graph shows your recent daily balances and transaction trends.
-          </p>
+          <p className="graph-description" />
         </div>
 
           <div className="transactions-column">
