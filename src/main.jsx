@@ -39,13 +39,16 @@ const router = createBrowserRouter([
     path: "add-transaction",
     element: <AddTransactionForm />
   },
-  {
+  { 
     path: "add-budget",
     element: <AddBudgetForm />
   },
   {
     path: "add-category",
     element: <AddCategoryForm />
+  },
+  {path: "budgets-page",
+    element: <div>Budgets Page</div>
   }
 ]);
 

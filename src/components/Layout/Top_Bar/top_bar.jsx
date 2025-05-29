@@ -9,7 +9,7 @@ const TopBar = () => {
             <span className="vertical_line"></span>
             <Link to="/financial">Analytics</Link>
             <span className="vertical_line"></span>
-            <Link to="/budgets">Budgets</Link>
+            <Link to="/budgets-page">Budgets</Link>
             <span className="vertical_line"></span>
             <Link to="/settings">Settings</Link>
         </div>
